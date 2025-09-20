@@ -1,8 +1,26 @@
-a = 5
-b = 10
+num1 = int(input("Enter the first number: "))
+operator = input("Please enter an operator (=, -, *, /): ")
+num2 = int(input("Enter the second number: "))
 
-# print(a + b)
+result = None
 
-if age > 20:
-    print("you are old enough to enough to drink alcohol in the US")
+if operator == "+":
+    result = num1 + num2
+
+elif operator == "-": 
+    result = num1 - num2
+
+elif operator == "*":
+    result = num1 * num2
+
+elif operator == "/":
+    result = num1 // num2
+
+else:
+    print("invalid operator")
+
+
+print(result)
+
+
 
